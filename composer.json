@@ -1,0 +1,41 @@
+{
+    "name": "type-smith/type-smith",
+    "description": "Generate strongly typed definitions for frontend applications from PHP application types.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TypeSmith\\TypeSmith\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shadow Walker",
+            "email": "franklynpeter2006@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/console": "^13.24",
+        "illuminate/support": "^13.24",
+        "nikic/php-parser": "^5.8"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.2",
+        "pestphp/pest": "^5.0",
+        "laravel/pint": "^1.30",
+        "orchestra/testbench": "^11.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "format": "pint"
+    }
+}
