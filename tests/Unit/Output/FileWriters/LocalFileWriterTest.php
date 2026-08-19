@@ -62,5 +62,5 @@ it('writes the generated type to the specified directory',
             'generated',
             'data class User(...)',
             'generated/User.kt',
-    ],
+        ],
     ]);
