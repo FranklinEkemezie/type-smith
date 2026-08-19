@@ -4,12 +4,12 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "TypeSmith\\TypeSmith\\": "src/"
+            "TypeSmith\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "TypeSmith\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -36,6 +36,7 @@
     },
     "scripts": {
         "test": "pest",
-        "format": "pint"
+        "format": "pint",
+        "analyse": "phpstan analyse ./src -l 10"
     }
 }

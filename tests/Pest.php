@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
+use TypeSmith\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
